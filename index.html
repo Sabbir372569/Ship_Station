@@ -9,10 +9,6 @@
     <meta
         charset="UTF-8"
     >
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
     <title>
         Document
     </title>
@@ -30,11 +26,15 @@
             padding: 0 10px;
         }
 
-        .order-items table,
-        th,
-        td {
+        .order-items table,th, td {
             border-collapse: collapse;
+            font-size: 12px;
         }
+
+        .order-table-header td {
+            padding: 0, 10px ;
+        }
+
     </style>
 </head>
 
@@ -51,8 +51,7 @@
             >
                 <span
                     style="font-size: medium; font-weight: 600;"
-                >Packing
-                    Slip
+                >Packing Slip
                 </span>
             </td>
         </tr>
@@ -73,17 +72,15 @@
                                 <div
                                     class="company-name">
                                     <span
-                                        style="font-size: 0.7rem;"
+                                        style="font-size: 0.8rem;"
                                     >
-                                        [Store
-                                        Company
-                                        Name]
+                                        [Store Company Name]
                                     </span>
                                 </div>
                                 <div
                                 class="company-name">
                                 <span
-                                    style="font-size: 0.7rem;"
+                                    style="font-size: 0.8rem;"
                                 >
                                 [Warehouse Address]
                                 </span>
@@ -107,7 +104,7 @@
                                 <b>Ship To:</b>
                             </td>
                             <td
-                                style="width: 3.5in; font-size: 14px">
+                                style="width: 3.5in; font-size: 12px">
                                 <div>
                                     [Recipient
                                     Name]
@@ -122,8 +119,8 @@
                                 </div>
                             </td>
                             <td
-                                style="width: 2.5in">
-                                <table
+                                style="width: 2.5in ;font-size: 12px;">
+                                <table class="order_header"
                                     cellspacing="0"
                                     border="0"
                                     class="order-info"
@@ -132,33 +129,33 @@
                                         <td
                                             align="right"
                                             class="label first"
+                                            style="font-weight: 600;"
                                         >
-                                            Order
-                                            #
+                                            Order# :
                                         </td>
                                         <td>
-                                            [Order
-                                            #]
+                                            [Order#]
                                         </td>
                                     </tr>
                                     <tr>
                                         <td
                                             align="right"
                                             class="label"
+                                            style="font-weight: 600;"
                                         >
-                                            Date
+                                            Date :
                                         </td>
                                         <td>
-                                            [Order
-                                            Date]
+                                            [Order Date]
                                         </td>
                                     </tr>
                                     <tr>
                                         <td
                                             align="right"
                                             class="label"
+                                            style="font-weight: 600;"
                                         >
-                                            User
+                                            User :
                                         </td>
                                         <td>
                                             [Username]
@@ -168,13 +165,12 @@
                                         <td
                                             align="right"
                                             class="label last"
+                                            style="font-weight: 600;"
                                         >
-                                            Ship
-                                            Date
+                                            Ship Date :
                                         </td>
                                         <td>
-                                            [Ship
-                                            Date]
+                                            [Ship Date]
                                         </td>
                                     </tr>
                                 </table>
@@ -182,12 +178,11 @@
                         </tr>
                     </tbody>
                 </table>
-                <p
+                <b
                     align="left"
-                    style="font-size:11px"
-                >Order
-                    Summary
-                </p>
+                    style="font-size:16px;"
+                >Order Summary
+                </b>
             </td>
         </tr>
 
@@ -195,10 +190,10 @@
         <tr
             class="order-items">
             <td
-                style="width: 5in">
+                style="width: 6in">
                 <table>
                     <tr
-                        class="order-items-header">
+                       >
                         <th>Item
                         </th>
                         <th>Description
@@ -213,20 +208,19 @@
                             Price
                         </th>
                     </tr>
-                    <tr>
+                    <tr 
+                    class="order-table-header"
+                    style="font-size: 10px;">
                         <td
                             class=sku>
                             [Sku]
                         </td>
-                        <td>[Item
-                            Title]<br>[Item
-                            Options]
+                        <td>[Item Title]<br>[Item Options]
                         </td>
                         <td
                             align=right
                             class=price
-                        >[Unit
-                            Price]
+                        >[Unit Price]
                         </td>
                         <td
                             align=center>
@@ -235,43 +229,29 @@
                         <td
                             align=center
                             class=location_ssreserved
-                        >[Product
-                            Location]
+                        >[Product Location]
                         </td>
                         <td
                             align=right
                             class=price
-                        >[Extended
-                            Price]
+                        >[Extended Price]
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </table>
             </td>
@@ -288,14 +268,12 @@
                     class="footer"
                 >
                     <tbody>
-                        <tr>
+                        <tr style="font-size: 12px">
                             <td
                                 rowspan="4"
                                 class="notes"
                             >
-                                [Notes
-                                to
-                                Buyer]
+                                [Notes to Buyer]
                             </td>
                             <td
                                 align="right"
@@ -309,11 +287,11 @@
                                 style="width:0.75in"
                                 align="right"
                                 class="price"
-                            >[Items
-                                Total]
+                            >[Items Total]
                             </td>
                         </tr>
-                        <tr
+                        <tr 
+                        style="font-size: 12px"
                             class="tax">
                             <td
                                 align="right"
@@ -329,7 +307,7 @@
                                 Paid]
                             </td>
                         </tr>
-                        <tr>
+                        <tr style="font-size: 12px">
                             <td
                                 align="right"
                                 class="label price"
@@ -340,11 +318,10 @@
                                 style="width:0.75in"
                                 align="right"
                                 class="price"
-                            >[Shipping
-                                Paid]
+                            >[Shipping Paid]
                             </td>
                         </tr>
-                        <tr>
+                        <tr style="font-size: 12px">
                             <td
                                 align="right"
                                 class="label price"
@@ -355,8 +332,7 @@
                                 style="width:0.75in"
                                 align="right"
                                 class="price"
-                            >[Order
-                                Total]
+                            >[Order Total]
                             </td>
                         </tr>
                     </tbody>
